@@ -58,4 +58,4 @@ Este manual proporciona instrucciones para utilizar los scripts de extracción d
 
 ## Contacto
 
-Para cualquier duda o problema puedes contactarme [sofia@rodriguezvazquez.com].
+Para cualquier duda o problema puedes contactarme por correo electrónico [sofia@rodriguezvazquez.com].
