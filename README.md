@@ -12,17 +12,29 @@ dilve_rutas/
 ├── DAPI_SQLite_v8.py
 
 ├── ListadoISBNsToSQLite.py
+
 ├── ConsultaDilve.py
+
 ├── book_all_fields.db
+
 ├── DILVE.fmp12
+
 ├── logs/
+
 │ └── ... (archivos de log)
+
 ├── update/
+
 │ ├── update_records.py
+
 │ ├── book_all_fields_update.db
+
 │ ├── estado_proceso.txt
+
 │ ├── fromDate.txt
+
 │ └── logs/
+
 │ └── ... (archivos de log)
 
 
