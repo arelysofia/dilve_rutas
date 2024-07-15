@@ -7,7 +7,7 @@ Este manual proporciona instrucciones para utilizar los scripts de extracción d
 - Python 3.x instalado.
 - DB Browser for SQLite para visualizar la base de datos.
 - FileMaker instalado para gestionar la base de datos `DILVE.fmp12`.
-- En el archivo config.txt van especificadas las rutas y credenciales para la ejecución de los scripts. Es necesario revisarla por si el ejecutable Python 'python.exe' no se encontrase en la ruta que viene ahí.
+- En el archivo `config.txt` van especificadas las rutas y credenciales para la ejecución de los scripts. Es necesario revisarla por si el ejecutable Python 'python.exe' no se encontrase en la ruta que viene ahí.
 ## Uso de los Scripts
 
 ### Extracción Inicial de ISBNs
