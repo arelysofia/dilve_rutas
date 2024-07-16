@@ -9,6 +9,7 @@ Este manual proporciona instrucciones para utilizar los scripts de extracción d
 - FileMaker instalado para gestionar la base de datos `DILVE.fmp12`.
 - En el archivo `config.txt` van especificadas las rutas y credenciales para la ejecución de los scripts. Es necesario revisarla por si el ejecutable Python 'python.exe' no se encontrase en la ruta que viene ahí y debe añadir sus propias credenciales de usuario para poder realizar las llamadas HTTP.
 - Para poder visualizar correctamente los datos em FileMaker, es necesario tener instalada la fuente `brittanic bold`
+- Para poder pasar la informacion desde SQLite a Filemaker, debe estra configurado el conector ODBC para FileMaker Driver y SQLite3 Driver.
 
 ## Uso de los Scripts
 ### Extracción Inicial de ISBNs
@@ -24,6 +25,7 @@ Este manual proporciona instrucciones para utilizar los scripts de extracción d
 
 ### Procesamiento de ISBNs
 
+Este script se encarga de extraer toda la información obtenida del parseo de los XMLs de cada libro.
 1. Ejecuta el siguiente comando para procesar los ISBNs obtenidos:
     ```sh
     python DAPI_SQLite_v8.py <usuario> <contraseña>
@@ -42,6 +44,7 @@ Este manual proporciona instrucciones para utilizar los scripts de extracción d
     ```sh
     python update/update_records.py <usuario> <contraseña>
     ```
+Ten en cuenta que la extraccion se hará desde el día que está especificado en el archivo `fromDate` hasta la fecha actual en la que se efectúa la ejecución.
 
 ## Visualización de Datos
 
