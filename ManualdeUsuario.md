@@ -7,14 +7,17 @@ Este manual proporciona instrucciones para utilizar los scripts de extracción d
 - Python 3.x instalado.
 - DB Browser for SQLite para visualizar la base de datos.
 - FileMaker instalado para gestionar la base de datos `DILVE.fmp12`.
-- En el archivo `config.txt` van especificadas las rutas y credenciales para la ejecución de los scripts. Es necesario revisarla por si el ejecutable Python 'python.exe' no se encontrase en la ruta que viene ahí.
+- En el archivo `config.txt` van especificadas las rutas y credenciales para la ejecución de los scripts. Es necesario revisarla por si el ejecutable Python 'python.exe' no se encontrase en la ruta que viene ahí y debe añadir sus propias credenciales de usuario para poder realizar las llamadas HTTP.
 - Para poder visualizar correctamente los datos em FileMaker, es necesario tener instalada la fuente `brittanic bold`
 
 ## Uso de los Scripts
 ### Extracción Inicial de ISBNs
 
-1. Abre una terminal y navega a la carpeta del proyecto.
-2. Ejecuta el siguiente comando para extraer los ISBNs iniciales:
+1. Debes crear previamente un programa desde la pagina web de dilve, ajustándolo con tus necesidades de extraccion
+   (Es recomendable que sea durante periodos de tiempo de 6 meses, por ejemplo, para que no exceda el máximo de
+   100 registros por consulta)
+2. Abre una terminal y navega a la carpeta del proyecto.
+3. Ejecuta el siguiente comando para extraer los ISBNs iniciales:
     ```sh
     python ListadoISBNsToSQLite.py <usuario> <contraseña> <nombre_programa>
     ```
