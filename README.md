@@ -15,11 +15,15 @@ dilve_rutas/
 
 ├── ConsultaDilve.py
 
+├── ConsultaDilve.bat
+
 ├── book_all_fields.db
 
 ├── DILVE.fmp12
 
 ├── logs/
+
+├── logs_isbns/
 
 │ └── ... (archivos de log)
 
@@ -27,15 +31,18 @@ dilve_rutas/
 
 │ ├── update_records.py
 
+│ ├── update_records.bat
+
 │ ├── book_all_fields_update.db
 
 │ ├── estado_proceso.txt
 
 │ ├── fromDate.txt
 
-│ └── logs/
+│ └── logs_isbns/
 
-│ └── ... (archivos de log)
+│ └── historicos/
+
 
 
 ## Descripción de los Archivos
