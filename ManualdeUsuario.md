@@ -15,7 +15,7 @@ Este manual proporciona instrucciones para utilizar los scripts de extracción d
 
 1. Debes crear previamente un programa desde la pagina web de dilve, ajustándolo con tus necesidades de extraccion
    (Es recomendable que sea durante periodos de tiempo de 6 meses, por ejemplo, para que no exceda el máximo de
-   100 registros por consulta)
+   100.000 registros por consulta)
 2. Abre una terminal y navega a la carpeta del proyecto.
 3. Ejecuta el siguiente comando para extraer los ISBNs iniciales:
     ```sh
