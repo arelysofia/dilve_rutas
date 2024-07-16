@@ -1,0 +1,7 @@
+PYTHON_PATH=..\..\..\AppData\Local\Programs\Python\Python312\python.exe
+PYTHON_PATH_ConsultaDilve=..\..\AppData\Local\Programs\Python\Python312\python.exe
+SCRIPT_PATH=update_records.py
+SCRIPT_PATH_ConsultaDilve=ConsultaDILVE.py
+ESTADO_PROCESO_PATH=estado_proceso.txt
+USER=<user>
+PASSWORD=<password>
