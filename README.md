@@ -67,7 +67,7 @@ dilve_rutas/
 - **update/estado_proceso.txt**: Archivo en el que se indica el estado de la ejecucion de update_record.py, si ha sido o no favorable.
 - **update/fromDate.txt**: Contiene la fecha en la que se ejecutó update_records.py con el formato YYYY-MM-DDTHH:MM:SSZ
   
-## Manual de Usuario
+## Resumen Manual de Usuario
 
 ### Requisitos Previos
 
