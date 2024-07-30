@@ -49,6 +49,7 @@ Ten en cuenta que la extraccion se hará desde el día que está especificado en
 ## Visualización de Datos
 
 - Abre `book_all_fields.db` en DB Browser for SQLite para explorar y analizar la información almacenada.
+- Abre `book_all_fields_update.db` en DB Browser for SQLite para explorar y analizar la información almacenada actualizada.
 - Utiliza FileMaker para gestionar y visualizar la base de datos `DILVE.fmp12`.
 
 ## Solución de Problemas
@@ -56,7 +57,7 @@ Ten en cuenta que la extraccion se hará desde el día que está especificado en
 ### Errores Comunes
 
 1. **Error de conexión a la API**:
-    - Verifica que las credenciales (usuario y contraseña) sean correctas.
+    - Verifica que las credenciales (usuario y contraseña) y las rutas de `config.txt`sean correctas.
     - Asegúrate de tener una conexión a internet estable.
 
 2. **Errores en la base de datos**:
