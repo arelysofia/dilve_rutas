@@ -50,7 +50,7 @@ dilve_rutas/
 - **config.txt**: Contiene las rutas para los ejecutables.
 - **DAPI_SQLite_v8.py**: Procesa los ISBNs y guarda la información en tablas utilizando `getRecordsX` desde la API de DILVE.
 - **ListadoISBNsToSQLite.py**: Realiza la extracción inicial de ISBNs con `getRecordListX` desde la API de DILVE.
-- **ConsultaDilve.py**: Consulta si un ISBN está en la plataforma de DILVE y, si es así, extrae la información.
+- **ConsultaDilve.py**: Consulta si un ISBN está en la plataforma de DILVE y, si es así, extrae la información y la deja almacenada en las tablas
 - **book_all_fields.db**: Base de datos con los datos de la extracción masiva inicial.
 - **DILVE.fmp12**: Base de datos en FileMaker.
 - **update/**: Contiene scripts y bases de datos para la actualización de registros.
@@ -66,12 +66,12 @@ dilve_rutas/
 
 1. **Extracción inicial de ISBNs**:
     
-    python `ListadoISBNsToSQLite.py`   <usuario> <contraseña> <nombre_programa>
+    python `ListadoISBNsToSQLite.py`   `<usuario>` `<contraseña>` `<nombre_programa>`
    
 
 2. **Procesamiento de ISBNs**:
    
-    python `DAPI_SQLite_v8.py`   <usuario> <contraseña>
+    python `DAPI_SQLite_v8.py`   `<usuario>` `<contraseña>`
    
 
 3. **Consulta de ISBN en DILVE**:
