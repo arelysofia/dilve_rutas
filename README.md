@@ -66,22 +66,22 @@ dilve_rutas/
 
 1. **Extracción inicial de ISBNs**:
     
-    python ListadoISBNsToSQLite.py   <usuario> <contraseña> <nombre_programa>
+    python `ListadoISBNsToSQLite.py`   <usuario> <contraseña> <nombre_programa>
    
 
 2. **Procesamiento de ISBNs**:
    
-    python DAPI_SQLite_v8.py   <usuario> <contraseña>
+    python `DAPI_SQLite_v8.py`   <usuario> <contraseña>
    
 
 3. **Consulta de ISBN en DILVE**:
  
-    python ConsultaDilve.py   <usuario> <contraseña> <isbn>
+    python `ConsultaDilve.py`   <usuario> <contraseña> <isbn>
 
 
 4. **Actualización de registros**:
 
-    python update/update_records.py   <usuario> <contraseña>
+    python `update/update_records.py`   <usuario> <contraseña>
 
 
 ### Visualización de Datos
