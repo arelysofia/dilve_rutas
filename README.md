@@ -23,6 +23,8 @@ dilve_rutas/
 
 ├── logs/
 
+│ └── ... (archivos de log)
+
 ├── logs_isbns/
 
 │ └── ... (archivos de log)
@@ -41,7 +43,11 @@ dilve_rutas/
 
 │ └── logs_isbns/
 
+│ └── ... (archivos de log)
+
 │ └── historicos/
+
+│ └── ... (Historicos de anteriores actualizaciones book_all_fields_update_(fecha_ult_extraccion).db)
 
 
 
@@ -51,16 +57,23 @@ dilve_rutas/
 - **DAPI_SQLite_v8.py**: Procesa los ISBNs y guarda la información en tablas utilizando `getRecordsX` desde la API de DILVE.
 - **ListadoISBNsToSQLite.py**: Realiza la extracción inicial de ISBNs con `getRecordListX` desde la API de DILVE.
 - **ConsultaDilve.py**: Consulta si un ISBN está en la plataforma de DILVE y, si es así, extrae la información y la deja almacenada en las tablas
+- **ConsultaDilve.bat**: Ejecutable de ConsultaDilve.py
 - **book_all_fields.db**: Base de datos con los datos de la extracción masiva inicial.
 - **DILVE.fmp12**: Base de datos en FileMaker.
 - **update/**: Contiene scripts y bases de datos para la actualización de registros.
-
+- **update/update_records.py**: Realiza la llamada `getRecordStatusX`desde la API de DILVE para obtener los registros actualizados e introduce la información recogida en la base de datos book_all_fields_update.db
+- **update/update_records.bat**: Ejecutable de update_records.bat
+- **update/book_all_fields_update.db**: Base de datos con los datos de la extracción actualizada.
+- **update/estado_proceso.txt**: Archivo en el que se indica el estado de la ejecucion de update_record.py, si ha sido o no favorable.
+- **update/fromDate.txt**: Contiene la fecha en la que se ejecutó update_records.py con el formato YYYY-MM-DDTHH:MM:SSZ
+  
 ## Manual de Usuario
 
 ### Requisitos Previos
 
 - Python 3.x instalado.
 - DB Browser for SQLite para visualizar la base de datos.
+- FileMaker Pro Advanced 18 para visualizar los datos en Claris FileMaker
 
 ### Uso de los Scripts
 
