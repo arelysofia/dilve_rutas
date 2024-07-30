@@ -110,3 +110,5 @@ dilve_rutas/
 
 Abre `book_all_fields.db` en DB Browser for SQLite para explorar y analizar la información almacenada de todos los registros de DILVE.
 Abre en `update\book_all_fields_update.db` en DB Browser for SQLite para explorar y analizar la información almacenada de los datos actualizados.
+Abre FileMaker y crea un archivo nuevo, desde ahí a través de la importación por ODBC puede incorporse la información de book_all_fields.db book_all_fields_update.db
+
