@@ -69,12 +69,6 @@ dilve_rutas/
   
 ## Resumen Manual de Usuario
 
-### Requisitos Previos
-
-- Python 3.x instalado.
-- DB Browser for SQLite para visualizar la base de datos.
-- FileMaker Pro Advanced 18 para visualizar los datos en Claris FileMaker
-
 ### Uso de los Scripts
 
 1. **Extracción inicial de ISBNs**:
